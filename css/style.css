@@ -1,0 +1,203 @@
+body {
+    font-family: 'Open Sans', sans-serif, 'Montserrat', sans-serif;
+}
+.font-xl {
+    font-size: 50px !important;
+}
+.font-lg {
+    font-size: 26px !important;
+}
+.font-md {
+    font-size: 16px !important;
+}
+.font-sm {
+    font-size: 14px !important;
+}
+.font-xs {
+    font-size: 12px !important;
+}
+.font-light {
+    font-weight: 300 !important;
+}
+.font-regular {
+    font-weight: 400 !important;
+}
+.font-medium {
+    font-weight: 500 !important;
+}
+.font-bold {
+    font-weight: 600 !important;
+}
+.font-bolder {
+    font-weight: 700 !important;
+}
+.text-brown {
+    color: #3F1D0B !important;
+}
+.text-gray {
+    color: #383838 !important;
+}
+.text-dark {
+    color: #000 !important;
+}
+.text-green {
+    color: #8BC540 !important;
+}
+button, .btn {
+    outline: none !important;
+}
+.bg-light-green {
+    background-color: #F0FAE4 !important;
+}
+.btn-green {
+    background-color: #fff;
+    border: 1px solid #8bc540;
+    border-radius: 30px;
+    height: 50px;
+    text-align: center;
+    padding: 12px 50px;
+    font-weight: 600;
+    color: #000;
+    transition: all 0.3s ease;
+}
+.btn-green:hover {
+    background-color: #8BC540;
+    color: #fff;
+}
+.btn-green:focus {
+    color: #fff;
+    background-color: #8BC540;
+    box-shadow: 0 0 0 0.2em rgb(139 197 64 / 25%);
+}
+.checkbox-green {
+    position: relative;
+}
+.checkbox-green input {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.checkbox-green label {
+    padding-left: 34px;
+    user-select: none;
+    cursor: pointer;
+    margin: 0;
+    vertical-align: 1px;
+}
+.checkbox-green label::before {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    border: 2px solid #8BC540;
+    background-color: #fff; 
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.checkbox-green input:checked + label::before {
+    border: 2px solid #8BC540;
+    background-color: #8BC540;    
+}
+.checkbox-green label::after {
+    display: none;
+}
+.checkbox-green input:checked + label::after {
+    display: block;
+    font-family: "Font Awesome 5 Pro";
+    content: "\f00c";
+    font-size: 14px;
+    color: #fff;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
+.checkbox-green input:focus ~ label::before,
+.checkbox-green input:not(:checked):focus ~ label::before {
+    box-shadow: 0 0 0 0.2rem rgb(139 197 64 / 50%);
+}
+.checkbox-green input:not(:disabled):active ~ label::before {
+    background-color: rgb(139 197 64 / 50%);
+}
+.form-login {
+    box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.05);
+}
+.form-login .form-control {
+    border: 1px solid #B3A59E;
+    padding: 14px 25px;
+    height: 50px;
+    font-size: 16px;
+    color: #383838;
+}
+.form-login .form-control:focus {
+    box-shadow: 0 0 0 0.2em rgb(139 197 64 / 25%);
+    border-color: #8BC540;
+}
+.form-login .form-control::-webkit-input-placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    color: #B3A59E;
+}
+.form-login .form-control::-moz-placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    color: #B3A59E;
+}
+.form-login .form-control:-ms-input-placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    color: #B3A59E;
+}
+.form-login .form-control:-moz-placeholder { 
+    font-weight: 500;
+    font-size: 14px;
+    color: #B3A59E;
+}
+.btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #B3A59E;
+    background-color: #fff;
+    height: 50px;
+    font-size: 14px;
+    color: #3F1D0B;
+}
+.btn-facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #4267B2;
+    background-color: #4267B2;
+    height: 50px;
+    font-size: 14px;
+    color: #fff;
+}
+.login-banner {
+    height: 100vh;
+    min-height: 100%;
+}
+.login-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top left;
+}
+.login-lft-bottom-pattern {
+    position: relative;
+}
+.login-lft-bottom-pattern::after {
+    display: block;
+    content: "";
+    background-image: url('../images/pattern-01.svg');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.15;
+    width: 178px;
+    height: 345px;
+}
